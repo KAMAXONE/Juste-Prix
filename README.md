@@ -1,3 +1,3 @@
 # sewer rat
 un rat qui survie dans plusieurs environnements
-non.
+https://itch.io pour les sprite en 2d
