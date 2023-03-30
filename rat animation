@@ -1,18 +1,11 @@
 index.html 
-x, y = img.size
-img.crop(0, 0, x/4, y/4).save('image1.jpg')
-img.crop(x/4, 0, x, y/4).save('image2.jpg')
-img.crop(0, y/2, x/2, y).save('image3.jpg')
-img.crop(x/2, y/2, x, y).save('image4.jpg')
-img.crop(0, 0, x/2, y/2).save('image5.jpg')
-img.crop(x/2, 0, x, y/2).save('image6.jpg')
-img.crop(0, y/2, x/2, y).save('image7.jpg')
-img.crop(x/2, y/2, x, y).save('image8.jpg')
-img.crop(0, 0, x/2, y/2).save('image9.jpg')
-img.crop(x/2, 0, x, y/2).save('image10.jpg')
-img.crop(0, y/2, x/2, y).save('image11.jpg')
-img.crop(x/2, y/2, x, y).save('image12.jpg')
-img.crop(0, 0, x/2, y/2).save('image13.jpg')
-img.crop(x/2, 0, x, y/2).save('image14.jpg')
-img.crop(0, y/2, x/2, y).save('image15.jpg')
-img.crop(x/2, y/2, x, y).save('image16.jpg')
+from PIL import *
+
+img=Image.open('rat-charset.png')
+img.crop((10,0,90,70)).save('image1.png')
+
+img4=Image.open('image1.png')
+img4.show()
+
+import basthon
+basthon.download('image1.png')
