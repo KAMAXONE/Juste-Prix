@@ -4,24 +4,29 @@ var maxNumber = 100;
 var targetNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
 
 // Timer
-var timer = document.getElementById("timer");
-var temps = 60;
+// Définir la durée du compte à rebours en secondes
+var duration = 60;
 
-function startTimer() {
-    while (temps > 0) {
-        sleep(1000);
-        temps = temps - 1;
-        if (temps > 1) {
-            timer.innerHTML = temps + "secondes";
-        }
-        else if (temps < 1) {
-        }
-        else {
-            timer.innerHTML = temps + "seconde";
-        }
-    }
-    timer.innerHTML = "finiiiii !";
+// Obtenir l'élément HTML où afficher le compte à rebours
+var countdownElement = document.getElementById('countdown');
+
+// Fonction pour mettre à jour le compte à rebours
+function updateCountdown() {
+  // Afficher le nombre de secondes restantes
+  countdownElement.innerHTML = duration + ' secondes';
+
+  // Réduire la durée de 1 seconde
+  duration--;
+
+  // Vérifier si le compte à rebours est terminé
+  if (duration < 0) {
+    clearInterval(interval);
+    countdownElement.innerHTML = 'Terminé !';
+  }
 }
+
+// Appeler la fonction updateCountdown toutes les secondes
+var interval = setInterval(updateCountdown, 1000);
 
 // Sleep
 function sleep(ms) {
