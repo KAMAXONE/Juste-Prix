@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+body{ 
+    div#avatar {
+  background-image: url(image9.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 103px;
+  padding: 0;
+}    
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%); 
+}
+
+h1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 4rem;
+    border-radius: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    color: white;
+    box-shadow: 0px 15px 50px 0px #000000;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+div label{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0px 15px 50px 0px #000000;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+div input{
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+}
+
+div button{
+    width: 200px;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0px 20px 25px -5px black;
+    transition: box-shadow 0.75s;
+    color: white;
+    font-size: 1.5em;
+}
+
+div button:hover{
+    box-shadow: 0px 10px 25px -5px black;
+}
+
+div p{
+    color: white;
+    box-shadow: 0px 15px 50px 0px #000000;
+    border-radius: 25px;
+    font-size: 1.5em;
+    padding: 25px;
+}
+
+div ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    height: 100px;
+    gap: 20px;
+    width: 70vw;
+    color: white;
+    box-shadow: 0px 15px 50px 0px #000000;
+    padding: 20px 40px 20px 40px;
+    border-radius: 25px;
+}
+
+div p#timer{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
