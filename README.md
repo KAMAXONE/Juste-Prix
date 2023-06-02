@@ -8,7 +8,9 @@
 - [x] création d'un compte a rebours
 - [x] faire fonctionner le bouton Valider
 - [x] afficher si la valeur est supérieur ou inférieur au nombre généré par l'ordinateur
+- [ ] Problème de style (css) Titre du jeu et autres 
 
 ## A modifier plus tard:
 
 - Le style de la page (exemple: ajouter des couleurs autour des cadres qui entourent les mots)
+- Ajouter le fait que la touche entrée valide le nombre aulieu de devoir appuyer sur valider 
