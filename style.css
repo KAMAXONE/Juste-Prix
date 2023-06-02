@@ -5,30 +5,21 @@
 }
 
 body{ 
-    div#avatar {
-  background-image: url(image9.png);
-  background-repeat: no-repeat;
-  width: 80px;
-  height: 103px;
-  padding: 0;
-}    
     background: rgb(2,0,36);
     background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%); 
 }
 
 h1{
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 50%;
+    max-width: 400px;
     height: 4rem;
     border-radius: 50px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 50px;
+    margin: 50px auto 0;
     color: white;
-    box-shadow: 0px 15px 50px 0px #000000;
+    box-shadow: 0px 2.5vw 8.33vw 0px #000000;
 }
 
 div{
@@ -36,47 +27,48 @@ div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 5vw;
     height: 100vh;
+    padding: 5vw;
 }
 
 div label{
-    font-size: 1.5em;
+    font-size: 2vw;
     text-transform: uppercase;
     color: white;
-    box-shadow: 0px 15px 50px 0px #000000;
-    border-radius: 25px;
-    padding: 25px;
+    box-shadow: 0px 2.5vw 8.33vw 0px #000000;
+    border-radius: 2.5vw;
+    padding: 2.5vw;
 }
 
 div input{
-    border: 2px solid black;
-    width: 100px;
-    height: 50px;
+    border: 0.33vw solid black;
+    width: 10vw;
+    height: 5vw;
 }
 
 div button{
-    width: 200px;
-    height: 100px;
-    border: 1px solid transparent;
-    border-radius: 20px;
+    width: 20vw;
+    height: 10vw;
+    border: 0.1vw solid transparent;
+    border-radius: 2vw;
     background-color: transparent;
-    box-shadow: 0px 20px 25px -5px black;
+    box-shadow: 0px 1.33vw 1.67vw -0.33vw black;
     transition: box-shadow 0.75s;
     color: white;
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 
 div button:hover{
-    box-shadow: 0px 10px 25px -5px black;
+    box-shadow: 0px 0.67vw 1.67vw -0.33vw black;
 }
 
 div p{
     color: white;
-    box-shadow: 0px 15px 50px 0px #000000;
-    border-radius: 25px;
-    font-size: 1.5em;
-    padding: 25px;
+    box-shadow: 0px 2.5vw 8.33vw 0px #000000;
+    border-radius: 2.5vw;
+    font-size: 2vw;
+    padding: 2.5vw;
 }
 
 div ul{
@@ -86,17 +78,17 @@ div ul{
     justify-content: normal;
     align-items: normal;
     align-content: normal;
-    height: 100px;
-    gap: 20px;
+    height: 10vw;
+    gap: 2vw;
     width: 70vw;
     color: white;
-    box-shadow: 0px 15px 50px 0px #000000;
-    padding: 20px 40px 20px 40px;
-    border-radius: 25px;
+    box-shadow: 0px 2.5vw 8.33vw 0px #000000;
+    padding: 2vw 4vw 2vw 4vw;
+    border-radius: 2.5vw;
 }
 
 div p#timer{
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 2.5vw;
+    left: 2.5vw;
 }
